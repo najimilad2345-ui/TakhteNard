@@ -1,64 +1,19 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تخته نرد</title>
 
-<style>
-body{
-margin:0;
-background:#2d1b0f;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-font-family:tahoma;
-}
+<title>🎲 تخته نرد</title>
 
-.board{
-width:95vw;
-max-width:900px;
-aspect-ratio:2/1;
-background:#b57a3d;
-border:10px solid #5d3413;
-border-radius:15px;
-display:grid;
-grid-template-columns:repeat(12,1fr);
-overflow:hidden;
-}
-
-.point{
-border:1px solid rgba(0,0,0,.2);
-position:relative;
-}
-
-.point:nth-child(odd){
-background:#d8b07b;
-}
-
-.point:nth-child(even){
-background:#8a4e22;
-}
-
-.title{
-position:absolute;
-top:10px;
-width:100%;
-text-align:center;
-color:white;
-font-size:28px;
-font-weight:bold;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="title">
-🎲 تخته نرد
-</div>
+<h1 class="title">🎲 بازی تخته نرد</h1>
 
 <div class="board">
 
@@ -68,7 +23,6 @@ font-weight:bold;
 <div class="point"></div>
 <div class="point"></div>
 <div class="point"></div>
-
 <div class="point"></div>
 <div class="point"></div>
 <div class="point"></div>
@@ -82,7 +36,6 @@ font-weight:bold;
 <div class="point"></div>
 <div class="point"></div>
 <div class="point"></div>
-
 <div class="point"></div>
 <div class="point"></div>
 <div class="point"></div>
@@ -92,5 +45,16 @@ font-weight:bold;
 
 </div>
 
+<div style="margin-top:20px;text-align:center;">
+
+<button onclick="rollDice()">
+🎲 انداختن تاس
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
